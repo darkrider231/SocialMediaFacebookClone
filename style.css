@@ -1,0 +1,414 @@
+* {
+    margin: 0 auto;
+    background: #111;
+}
+
+.topnav {
+    margin: auto;
+    margin-top: 5px;
+    margin-left: 5px;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.name:hover, .middleside i:hover, .rightside i:hover, .openNav:hover, .btnSubmit:hover {
+    cursor: pointer;
+}
+
+.name {
+    color: #818181;
+    font-weight: bolder;
+}
+
+.leftside, .middleside, .rightside {
+    display: inline-block;
+    justify-content: left;
+    padding-top: 10px;
+    padding-left: 5px;
+    height: 50px;
+    width: 36.5%;
+    border: 3px solid #111;
+    background: #111;
+}
+
+.leftside {
+    width: 25%;
+}
+
+.searchBar {
+    font-size: 30px;
+    border-radius: 15px;
+    padding-left: 15px;
+    vertical-align: middle;
+}
+
+.searchBar:hover, .postText:hover {
+    border: 1px solid red;
+}
+
+.middleside, .rightside {
+    color: #818181;
+}
+
+.middleside i {
+    font-size: 30px;
+    margin-left: 130px;
+}
+
+.fa-facebook-messenger, .fa-bell, .fa-user {
+    float: right;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/* The side navigation menu */
+.sidenav {
+    float: left;
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 120; /* Stay at the top */
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  }
+
+  /* Font size of the navigation menu */
+  h2 {
+    float: left;
+    margin-left: 30px;
+    margin-top: 10px;
+    color: #818181;
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+  #main {
+    transition: margin-left .5s;
+    padding: 20px;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+/* Sidebar extra stuff */
+.hr1 {
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+    color: gray;
+    border: 1px solid gray;
+    margin-top: 30px;
+}
+
+.closeNav {
+    float: right;
+    margin-right: 35px;
+}
+
+/* Change the Side Navigation Bars Colors, etc. */
+.fa-bars  {
+    font-size: 30px;
+    margin-left: 10px;
+    color: #818181;    
+}
+
+.fa-bars:hover {
+    cursor: pointer;
+}
+
+/* Submit Post */
+.postText {
+    display: block;
+    position: absolute;
+    top: 200px;
+    left: 800px;
+    width: 20%;
+    height: 5%;
+    border-radius: 30px;
+    font-size: 30px;
+    padding-left: 20px;
+    color: #f1f1f1;
+}
+
+/* Newsfeed (Middle Column) */
+.newsFeed  {
+    display: block;
+    position: absolute;
+    border: 1px solid #818181;
+    color: #f1f1f1;
+    left: 760px;
+    width: 32%;
+    height: 30%;
+    padding: 15px;
+    font-size: 30px;
+}
+
+.btnSubmit {
+    display: block;
+    position: absolute;
+    left: 1450px;
+    top: 200px;
+    width: 7%;
+    height: 5%;
+    font-size: 30px;
+    border: 1px solid #818181;
+    background: #818181;
+    border-radius: 50px;
+}
+
+.fa-paper-plane {
+    display: block;
+    position: absolute;
+    left: 1350px;
+    top: 230px;
+    font-size: 25px;
+    color: #818181;
+}
+
+/* Below the post of the newsfeed */
+.postMedia .fa-images {
+    display: block;
+    position: absolute;
+    left: 0px;
+    top: -100px;
+    color: green;
+    font-size: 70px;
+}
+
+.postMedia .fa-video {
+    display: block;
+    position: absolute;
+    left: 300px;
+    top: -110px;
+    font-size: 70px;
+    color: red;
+}
+
+/* Feelings/Activity Posts */
+.postMedia .laugh1 {
+    display: block;
+    position: absolute;
+    color: #f1f1f1;
+    left: 550px;
+    top: 0px;
+}
+
+.fa-face-laugh {
+    display: block;
+    position: absolute;
+    color: yellow;
+    left: 600px;
+    top: -100px;
+    font-size: 70px;
+}
+
+/* Post Images */
+.postMedia .images1 {
+    font-size: 30px;
+}
+
+
+/* Post Live Videos */
+.postMedia .video1 {
+    display: block;
+    position: absolute;
+    left: 330px;
+    top: -15px;
+}
+
+/* Newsfeed middle stuff */
+.postMedia {
+    display: block;
+    position: relative;
+    left: -500px;
+    top: 350px;
+    width: 100px;
+    font-size: 30px;
+    color: #f1f1f1;
+}
+
+/* What people posts (visible for now) */
+.newsPosts {
+    display: block;
+    position: absolute;
+    border: 1px solid #818181;
+    height: 500px;
+    width: 950px;
+    left: 760px;
+    top: 600px;
+}
+
+.newsPosts .fa-user {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 15px;
+    color: #f1f1f1;
+}
+
+.newsPosts .postUser {
+    display: block;
+    position: absolute;
+    color:#f1f1f1;
+    font-size: 30px;
+    left: 50px;
+    top: 5px;
+}
+
+.newsPosts .fa-ellipsis {
+    display: block;
+    position: absolute;
+    color: #f1f1f1;
+    left: 850px;
+    top: 5px;
+}
+
+.newsPosts .fa-ellipsis:hover {
+    cursor: pointer;
+}
+
+.newsPosts .editedBy {
+    display: block;
+    position: absolute;
+    left: 30px;
+    top: 150px;
+    color: #f1f1f1;
+}
+
+.newsPosts .editedBy1 {
+    display: block;
+    position: absolute;
+    left: 30px;
+    top: 200px;
+    color: #f1f1f1;
+}
+
+.newsPosts .btnLike {
+    display: block;
+    position: absolute;
+    left: 30px;
+    top: 400px;
+    width: 280px;
+    height: 90px;
+    color: #f1f1f1;
+    font-size: 40px;
+    
+    border: 1px solid #818181;
+    border-radius: 10px;
+}
+
+.newsPosts .btnLike .fa-thumbs-up, .newsPosts .fa-message, .newsPosts .fa-share {
+    margin-right: 30px;
+}
+
+.newsPosts .btnComment {
+    display: block;
+    position: absolute;
+    left: 350px;
+    top: 400px;
+    width: 280px;
+    height: 90px;
+    color: #f1f1f1;
+    font-size: 40px;
+    border: 1px solid #818181;
+    border-radius: 5px;
+}
+
+.newsPosts .btnShare {
+    display: block;
+    position: absolute;
+    left: 660px;
+    top: 400px;
+    width: 280px;
+    height: 90px;
+    font-size: 40px;
+    color: #f1f1f1;
+    border: 1px solid #818181;
+    border-radius: 5px;
+}
+
+.newsPosts .btnLike, .newsPosts .btnComment, .newsPosts .btnShare:hover {
+    cursor: pointer;
+}
+
+/* Right Side of Newsfeed */
+.rightSide {
+    display: block;
+    position: absolute;
+    right: 200px;
+    border: 1px solid #818181;
+    height: 25%;
+    padding: 10px;
+}
+
+/* Pages */
+.rightSide h2 {
+    font-size: 30px;
+    color: #818181;
+}
+
+.rightSide h5 {
+    font-size: 25px;
+    color: #f1f1f1;
+    margin-left: auto;
+    margin-right: auto;
+    width: 51%;
+    margin-top: 5px;
+}
+
+.hr3 {
+    margin-top: 50px;
+    color: #818181;
+}
+
+.hr4 {
+    display: block;
+    position: absolute;
+    top: 500px;
+    color: #818181;
+    width: 30%;
+    left: 800px;
+}
+
+/* Friend Requests */
+.friendRequests {
+    margin-bottom: 150px;
+}
+
+/* Contacts */
+.fa-video, .fa-magnifying-glass, .fa-ellipsis  {
+    font-size: 30px;
+    color: #818181;
+    margin-top: 13px;
+    margin-left: 20px;
+}
